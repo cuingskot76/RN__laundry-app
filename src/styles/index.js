@@ -1,6 +1,6 @@
 import {COLORS} from '../constants';
 
-const {StyleSheet} = require('react-native/types');
+const {StyleSheet} = require('react-native');
 
 const styles = StyleSheet.create({
   container: {
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: COLORS.SUCCESS,
+    color: COLORS.GRAY_DARK,
   },
 });
 
