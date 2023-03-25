@@ -1,4 +1,4 @@
-import {COLORS} from '../constants';
+// import {COLORS} from '../constants';
 
 const {StyleSheet} = require('react-native');
 
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: COLORS.GRAY_DARK,
+    // color: COLORS.GRAY_DARK,
   },
 });
 

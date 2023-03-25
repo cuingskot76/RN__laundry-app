@@ -5,7 +5,7 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 
-// new
+// ! new
 import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
@@ -19,7 +19,7 @@ public class MainActivity extends ReactActivity {
     return "FirstProject";
   }
 
-  // new 
+  // ! new 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(null);
