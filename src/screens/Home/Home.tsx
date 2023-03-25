@@ -17,6 +17,7 @@ import Wave from '../../../public/assets/icons/wave-5.png';
 import WashingMachine from '../../../public/assets/images/washing-machine.png';
 import Iron from '../../../public/assets/images/iron.png';
 import DryCleaning from '../../../public/assets/images/dry-cleaning.png';
+import Other from '../../../public/assets/images/other.png';
 
 import { COLORS, person, wave } from '../../constants';
 
@@ -28,7 +29,7 @@ const Home = () => {
   const services = [
     {
       id: 1,
-      name: 'Wash & Iron',
+      name: 'Wash & dIron',
       image: WashingMachine,
     },
     {
@@ -41,6 +42,11 @@ const Home = () => {
       name: 'Dry Cleaning',
       image: DryCleaning,
     },
+    {
+      id: 4,
+      name: 'Others',
+      image: Other,
+    },
   ];
 
   // const slicedServices = services.slice(0, 2);
@@ -51,9 +57,9 @@ const Home = () => {
         style={[
           {
             backgroundColor: COLORS.darkGreen,
-            height: 400,
-            borderBottomLeftRadius: 50,
-            borderBottomRightRadius: 50,
+            height: 500,
+            borderBottomLeftRadius: 30,
+            borderBottomRightRadius: 30,
             paddingLeft: 20,
             position: 'relative',
           },
@@ -90,11 +96,6 @@ const Home = () => {
         <View>
           <FlatList
             data={services}
-            // contentContainerStyle={{
-            //   display: 'flex',
-            //   backgroundColor: 'salmon',
-            //   flexDirection: 'row',
-            // }}
             contentContainerStyle={{
               marginTop: 50,
             }}
@@ -123,7 +124,6 @@ const Home = () => {
                         fontSize: 20,
                         fontWeight: 'bold',
                         color: 'black',
-                        // fontFamily: 'poppins',
                       }}>
                       {item.name}
                     </Text>
@@ -134,21 +134,26 @@ const Home = () => {
                   <TouchableOpacity
                     style={{
                       backgroundColor: '#fff',
-                      borderRadius: 10,
+                      borderRadius: 20,
                       width: 150,
-                      height: 150,
+                      height: 200,
                       marginRight: 20,
+                      marginTop: 20,
                       display: 'flex',
                       justifyContent: 'center',
                       alignItems: 'center',
-                      flex: 0.47,
-                      marginTop: 20,
+                      flex: 1,
                     }}>
                     <Image
                       source={item.image}
-                      style={{ width: 50, height: 50, marginBottom: 10 }}
+                      style={{ width: 70, height: 70, marginBottom: 10 }}
                     />
-                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}>
+                    <Text
+                      style={{
+                        fontSize: 20,
+                        fontWeight: 'bold',
+                        color: 'black',
+                      }}>
                       {item.name}
                     </Text>
                   </TouchableOpacity>

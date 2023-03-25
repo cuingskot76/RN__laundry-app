@@ -8,7 +8,7 @@ import Profile from '../screens/Profile/Profile';
 
 const Stack = createNativeStackNavigator();
 
-const Routes = () => {
+const Router = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
@@ -19,4 +19,4 @@ const Routes = () => {
   );
 };
 
-export default Routes;
+export default Router;
