@@ -1,55 +1,42 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {
-  Text,
-  View,
-  Button,
-  Alert,
-  ScrollView,
-  Image,
-  FlatList,
-  TouchableOpacity,
-} from 'react-native';
+import { Text, View, Image, FlatList, TouchableOpacity } from 'react-native';
 
 import styles from './home.style';
 
-import Wave from '../../../public/assets/icons/wave-5.png';
-import WashingMachine from '../../../public/assets/images/washing-machine.png';
-import Iron from '../../../public/assets/images/iron.png';
-import DryCleaning from '../../../public/assets/images/dry-cleaning.png';
-import Other from '../../../public/assets/images/other.png';
+import {
+  featureDryCleaning,
+  bannerWave,
+  featureIron,
+  featureOther,
+  featureWashing,
+} from '../../../public/assets/images';
 
-import { COLORS, person, wave } from '../../constants';
-
-// interface navigationProps {
-//   navigation: any;
-// }
+import { COLORS, person } from '../../constants';
 
 const Home = () => {
   const services = [
     {
       id: 1,
       name: 'Wash & dIron',
-      image: WashingMachine,
+      image: featureWashing,
     },
     {
       id: 2,
       name: 'Ironing',
-      image: Iron,
+      image: featureIron,
     },
     {
       id: 3,
       name: 'Dry Cleaning',
-      image: DryCleaning,
+      image: featureDryCleaning,
     },
     {
       id: 4,
       name: 'Others',
-      image: Other,
+      image: featureOther,
     },
   ];
-
-  // const slicedServices = services.slice(0, 2);
 
   return (
     <View style={{ backgroundColor: '#eee', height: '100%' }}>
@@ -73,7 +60,10 @@ const Home = () => {
             right: -150,
             transform: [{ rotate: '45deg' }],
           }}>
-          <Image source={Wave} style={{ width: '100%', height: '100%' }} />
+          <Image
+            source={bannerWave}
+            style={{ width: '100%', height: '100%' }}
+          />
         </View>
         <View>
           <View
