@@ -3,6 +3,8 @@ const COLORS = {
   lightGray: '#73788b',
   darkGreen: '#0d5c46',
   lightGreen: '#5ebc9d',
+  white: '#ffffff',
+  darkWhite: '#dddddd',
 
   warning: '#ffba00',
   danger: '#ef6a7f',
@@ -24,4 +26,4 @@ const SIZES = {
   xxLarge: 32,
 };
 
-export {COLORS, FONT, SIZES};
+export { COLORS, FONT, SIZES };

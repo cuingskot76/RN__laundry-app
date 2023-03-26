@@ -7,6 +7,7 @@ import Notification from '../screens/Notifications/Notification';
 import Profile from '../screens/Profile/Profile';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ButtonTab from '../components/buttonTab/ButtonTab';
+import Splash from '../components/splash/Splash';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -16,19 +17,40 @@ const BottomNavigator = () => {
     <Tab.Navigator
       // allowAsProps={true}
       tabBar={props => <ButtonTab {...props} />}>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Order" component={Order} />
-      <Tab.Screen name="Notification" component={Notification} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen
+        name="Home"
+        options={{ headerShown: false }}
+        component={Home}
+      />
+      <Tab.Screen
+        name="Order"
+        options={{ headerShown: false }}
+        component={Order}
+      />
+      <Tab.Screen
+        name="Notification"
+        options={{ headerShown: false }}
+        component={Notification}
+      />
+      <Tab.Screen
+        name="Profile"
+        options={{ headerShown: false }}
+        component={Profile}
+      />
     </Tab.Navigator>
   );
 };
 
 const Router = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="Main">
       <Stack.Screen
-        name="BottomNavigator"
+        name="Splash"
+        options={{ headerShown: false }}
+        component={Splash}
+      />
+      <Stack.Screen
+        name="Main"
         options={{ headerShown: false }}
         component={BottomNavigator}
       />

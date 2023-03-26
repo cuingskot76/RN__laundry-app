@@ -13,12 +13,13 @@ import {
 } from '../../../public/assets/images';
 
 import { COLORS, person } from '../../constants';
+import Heading from '../../components/atoms/Heading';
 
 const Home = () => {
   const services = [
     {
       id: 1,
-      name: 'Wash & dIron',
+      name: 'Wash & Iron',
       image: featureWashing,
     },
     {
@@ -109,14 +110,9 @@ const Home = () => {
                       source={item.image}
                       style={{ width: 70, height: 70, marginBottom: 10 }}
                     />
-                    <Text
-                      style={{
-                        fontSize: 20,
-                        fontWeight: 'bold',
-                        color: 'black',
-                      }}>
+                    <Heading isLarge={true} style={{ color: 'black' }}>
                       {item.name}
-                    </Text>
+                    </Heading>
                   </TouchableOpacity>
                 );
               } else {
@@ -138,14 +134,9 @@ const Home = () => {
                       source={item.image}
                       style={{ width: 70, height: 70, marginBottom: 10 }}
                     />
-                    <Text
-                      style={{
-                        fontSize: 20,
-                        fontWeight: 'bold',
-                        color: 'black',
-                      }}>
+                    <Heading isLarge={true} style={{ color: 'black' }}>
                       {item.name}
-                    </Text>
+                    </Heading>
                   </TouchableOpacity>
                 );
               }

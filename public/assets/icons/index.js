@@ -4,6 +4,8 @@ import IconHome from './home.svg';
 import IconHomeActive from './homeActive.svg';
 import IconProfile from './profile.svg';
 import IconProfileActive from './profileActive.svg';
+import IconOrder from './clipboard.svg';
+import IconOrderActive from './clipboardActive.svg';
 
 export {
   IconNotification,
@@ -12,4 +14,6 @@ export {
   IconHomeActive,
   IconProfile,
   IconProfileActive,
+  IconOrder,
+  IconOrderActive,
 };
