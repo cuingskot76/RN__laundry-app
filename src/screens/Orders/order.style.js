@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 16,
     color: COLORS.darkGray,
-    marginVertical: 5,
+    marginVertical: 7,
   },
   itemsDetailsName: {
     fontWeight: '400',

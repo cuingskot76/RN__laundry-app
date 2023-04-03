@@ -128,7 +128,7 @@ const Order = () => {
                   </View>
                 </View>
                 {/* triangel */}
-                <View
+                {/* <View
                   style={{
                     position: 'absolute',
                     bottom: 0,
@@ -144,7 +144,29 @@ const Order = () => {
                     borderRightColor: 'transparent',
                     borderBottomColor: '#eee',
                   }}
-                />
+                /> */}
+                <View>
+                  {[...Array(7)].map((_, i) => (
+                    <View
+                      key={i}
+                      style={{
+                        position: 'absolute',
+                        bottom: -20,
+                        right: i * 50,
+                        width: 0,
+                        height: 0,
+                        backgroundColor: 'transparent',
+                        borderStyle: 'solid',
+                        borderLeftWidth: 20,
+                        borderRightWidth: 20,
+                        borderBottomWidth: 20,
+                        borderLeftColor: 'transparent',
+                        borderRightColor: 'transparent',
+                        borderBottomColor: '#eee',
+                      }}
+                    />
+                  ))}
+                </View>
               </TouchableOpacity>
             );
           }}

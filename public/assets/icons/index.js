@@ -6,6 +6,7 @@ import IconProfile from './profile.svg';
 import IconProfileActive from './profileActive.svg';
 import IconOrder from './clipboard.svg';
 import IconOrderActive from './clipboardActive.svg';
+import WaveOrder from './waveOrder.svg';
 
 export {
   IconNotification,
@@ -16,4 +17,5 @@ export {
   IconProfileActive,
   IconOrder,
   IconOrderActive,
+  WaveOrder,
 };
