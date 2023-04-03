@@ -3,8 +3,8 @@ import React from 'react';
 
 interface HeadingProps {
   isLarge?: boolean;
-  style?: TextStyle;
   children: React.ReactNode;
+  style?: TextStyle | TextStyle[];
 }
 
 const Heading = ({ children, isLarge, style }: HeadingProps) => {
