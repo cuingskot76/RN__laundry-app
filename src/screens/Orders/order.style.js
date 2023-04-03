@@ -4,7 +4,6 @@ import { COLORS } from '../../constants';
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#eee',
-    height: '100%',
   },
   containerBg: {
     width: '100%',
@@ -30,21 +29,49 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: 27,
   },
+  itemsContainer: {
+    marginTop: -450,
+  },
   itemContainer: {
     backgroundColor: COLORS.white,
     borderRadius: 10,
     padding: 20,
     marginBottom: 20,
-    position: 'relative',
   },
   itemId: {
     fontWeight: 'bold',
     fontSize: 20,
+    color: COLORS.darkGray,
   },
   itemName: {
     fontSize: 18,
-    fontWeight: 'normal',
-    color: COLORS.danger,
+    fontWeight: 'bold',
+    // color: COLORS.danger,
+    color: '#1572A1',
+    marginVertical: 10,
+  },
+  itemsDetailsContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  itemsDetails: {
+    fontWeight: '700',
+    fontSize: 16,
+    color: COLORS.darkGray,
+    marginVertical: 5,
+  },
+  itemsDetailsName: {
+    fontWeight: '400',
+    fontSize: 16,
+    color: COLORS.lightGray,
+  },
+  itemsDetailsAddress: {
+    fontWeight: '500',
+    fontSize: 16,
+    color: COLORS.darkGray,
+    width: '60%',
   },
 });
 
