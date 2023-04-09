@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import TabItem from './TabItem';
+import { COLORS } from '../../constants';
 
 const BottomNavigator = ({
   state,
@@ -66,9 +67,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: 25,
-    paddingVertical: 14,
-    height: 60,
-    marginBottom: 10,
+    height: 70,
+    backgroundColor: COLORS.white,
   },
 });

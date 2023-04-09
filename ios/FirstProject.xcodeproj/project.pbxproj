@@ -19,6 +19,7 @@
 		70AC5789D86549C2B8036DA4 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92858A0CB39644B2BC06325D /* Rubik-Light.ttf */; };
 		D45223B514DD4FACBC6731F0 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8696B50AF7BC4CFDBA64BF7C /* Rubik-Medium.ttf */; };
 		FE4CB4A5C4B244C78504538F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEEFBBAC7CBA42CF9B81CD58 /* Rubik-Regular.ttf */; };
+		A23BCE9613C64CE6935839A5 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4565AF7B58F54C5196F12343 /* Poppins-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		92858A0CB39644B2BC06325D /* Rubik-Light.ttf */ = {isa = PBXFileReference; name = "Rubik-Light.ttf"; path = "../public/assets/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		8696B50AF7BC4CFDBA64BF7C /* Rubik-Medium.ttf */ = {isa = PBXFileReference; name = "Rubik-Medium.ttf"; path = "../public/assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CEEFBBAC7CBA42CF9B81CD58 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; name = "Rubik-Regular.ttf"; path = "../public/assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4565AF7B58F54C5196F12343 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; name = "Poppins-Italic.ttf"; path = "../public/assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				92858A0CB39644B2BC06325D /* Rubik-Light.ttf */,
 				8696B50AF7BC4CFDBA64BF7C /* Rubik-Medium.ttf */,
 				CEEFBBAC7CBA42CF9B81CD58 /* Rubik-Regular.ttf */,
+				4565AF7B58F54C5196F12343 /* Poppins-Italic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				70AC5789D86549C2B8036DA4 /* Rubik-Light.ttf in Resources */,
 				D45223B514DD4FACBC6731F0 /* Rubik-Medium.ttf in Resources */,
 				FE4CB4A5C4B244C78504538F /* Rubik-Regular.ttf in Resources */,
+				A23BCE9613C64CE6935839A5 /* Poppins-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

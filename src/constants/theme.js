@@ -11,10 +11,10 @@ const COLORS = {
 };
 
 const FONT = {
-  light: 'Poppins',
+  light: 'poppins',
   regular: 'Rubik-Regular',
   medium: 'Rubik-Medium',
-  bold: 'Poppins',
+  bold: 'Rubik-Bold',
 };
 
 const SIZES = {

@@ -4,6 +4,7 @@ import { COLORS } from '../../constants';
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#eee',
+    // backgroundColor: 'salmon',
   },
   containerBg: {
     width: '100%',

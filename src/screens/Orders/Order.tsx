@@ -15,7 +15,7 @@ import { COLORS, orders } from '../../constants';
 
 const Order = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.containerBg} />
       <View style={styles.bgWave}>
         <Image source={bannerWave} style={{ width: '100%', height: '100%' }} />
@@ -24,13 +24,15 @@ const Order = () => {
         <Heading isLarge={true} style={styles.headingText}>
           Orders
         </Heading>
+
         {/* orders */}
         <FlatList
           data={orders}
+          scrollEnabled={false}
           contentContainerStyle={{
-            borderRadius: 10,
+            // borderRadius: 10,
             // minHeight: '100%',
-            height: '150%',
+            // height: '150%',
             padding: 20,
           }}
           renderItem={({ item, index }) => {
@@ -191,7 +193,7 @@ const Order = () => {
         })} */}
         {/* end__orders */}
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

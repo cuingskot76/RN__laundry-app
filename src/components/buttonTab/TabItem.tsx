@@ -69,13 +69,15 @@ export default TabItem;
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
   },
   textFocused: {
     color: COLORS.darkGreen,
     fontWeight: 'bold',
   },
   textUnfocused: {
-    color: COLORS.darkGray,
+    color: COLORS.lightGray,
     fontWeight: 'normal',
   },
 });
