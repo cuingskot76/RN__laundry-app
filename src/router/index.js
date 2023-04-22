@@ -12,11 +12,16 @@ import Splash from '../components/splash/Splash';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+const allButtonTabs = item => {
+  return <ButtonTab {...item} />;
+};
+
 const BottomNavigator = () => {
   return (
     <Tab.Navigator
       // allowAsProps={true}
-      tabBar={props => <ButtonTab {...props} />}>
+      // tabBar={props => <ButtonTab {...props} />}
+      tabBar={props => allButtonTabs(props)}>
       <Tab.Screen
         name="Home"
         options={{ headerShown: false }}
